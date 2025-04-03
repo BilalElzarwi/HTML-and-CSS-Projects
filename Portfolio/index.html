@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilal El Zarwi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      filter: grayscale(100%);
+      transition: 0.3s ease;
+    }
+
+    .image-container img:hover {
+      filter: grayscale(0%);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 2px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    .two-column-layout {
+      display: flex;
+      margin-top: 30px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+      margin: 10px;
+      background-color: #f4f4f4;
+      height: 300px;
+    }
+
+    .column p {
+      color: #333;
+    }
+
+    p:hover {
+      color: #ff6347;
+      cursor: pointer;
+    }
+
+    .image-overlay-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .image-overlay-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-overlay-container:hover .overlay {
+      opacity: 1;
+    }
+
+    .video-container {
+      position: relative;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+
+    .video-container video {
+      width: 100%;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#how-to">How To</a>
+  </div>
+
+  <div class="image-container">
+    <img src="img1" alt="Sample Image">
+  </div>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="two-column-layout">
+    <div class="column">
+      <p>This is column 1. Content goes here.</p>
+    </div>
+    <div class="column">
+      <p>This is column 2. Content goes here.</p>
+    </div>
+  </div>
+
+  <p>Hover over this text to change its color.</p>
+
+  <div class="image-overlay-container">
+    <img src="img2" alt="Overlay Image">
+    <div class="overlay">
+      <p>Overlay Text</p>
+    </div>
+  </div>
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <p>Sample Video Overlay</p>
+    </div>
+  </div>
+<footer>
+  <p>Created by Bilal El Zarwi</p>
+  <p>© 2025 Bilal El Zarwi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
